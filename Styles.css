@@ -194,10 +194,4 @@ footer {
         bottom: auto; /* Rimuovi il posizionamento in basso */
     }
     
-    #contact-button,
-    .view-projects-btn {
-        padding: 15px 30px; /* Ripristina il padding originale del bottone */
-        font-size: inherit; /* Utilizza la dimensione del testo ereditata */
-        margin-bottom: 20px; /* Aggiungi margine tra il bottone e il footer */
-    }
 }
