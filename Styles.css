@@ -4,6 +4,28 @@
     --blu-chiaro: #cce0ff; /* Blu chiaro per sfondo */
 }
 
+.profile-container {
+    text-align: center;
+}
+
+.profile-picture {
+    width: 300px; /* Regola la larghezza dell'immagine */
+    height: 300px; /* Regola l'altezza dell'immagine */
+    border-radius: 50%; /* Rende l'immagine rotonda */
+    overflow: hidden; /* Nasconde eventuali parti dell'immagine che escono dal bordo arrotondato */
+    margin: 0 auto; /* Centra l'immagine orizzontalmente */
+}
+
+.profile-picture img {
+    width: 100%; /* Assicura che l'immagine si adatti correttamente al contenitore */
+    height: auto; /* Impedisce il ridimensionamento distorto dell'immagine */
+}
+
+.profile-name {
+    margin-top: 10px; /* Aggiungi spazio sopra la scritta */
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
