@@ -169,6 +169,10 @@ footer {
 
 /* Responsive design */
 @media (max-width: 768px) {
+    body {
+        padding-top: 60px; /* Aggiunge spazio sopra il contenuto per il fixed header */
+    }
+
     .container {
         width: 100%;
         padding: 10px;
