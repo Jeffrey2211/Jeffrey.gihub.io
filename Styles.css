@@ -187,4 +187,10 @@ footer {
     .icon {
         margin-bottom: 5px;
     }
+
+    footer {
+        position: static; /* Rimuovi il posizionamento fisso */
+        width: 100%; /* Imposta la larghezza al 100% */
+        bottom: auto; /* Rimuovi il posizionamento in basso */
+    }
 }
