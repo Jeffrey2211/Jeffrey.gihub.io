@@ -168,16 +168,12 @@ footer {
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
+@@media (max-width: 768px) {
     body {
         padding-top: 60px; /* Aggiunge spazio sopra il contenuto per il fixed header */
+        margin-bottom: 50px; /* Aggiunge un margine inferiore per separare il body dal footer */
     }
-
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
-
+    
     .profile-picture {
         width: 200px; /* Modifica le dimensioni dell'immagine per dispositivi più piccoli */
         height: 200px;
