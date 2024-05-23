@@ -13,7 +13,7 @@
     height: 300px; /* Regola l'altezza dell'immagine */
     border-radius: 50%; /* Rende l'immagine rotonda */
     overflow: hidden; /* Nasconde eventuali parti dell'immagine che escono dal bordo arrotondato */
-    margin: 0 auto; /* Centra l'immagine orizzontalmente */
+    margin: 20px auto 0; /* Centra l'immagine orizzontalmente e aggiunge un margine superiore di 20px */
 }
 
 .profile-picture img {
