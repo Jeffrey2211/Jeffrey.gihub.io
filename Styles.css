@@ -204,4 +204,9 @@ footer {
         padding: 10px 20px; /* Riduci il padding del bottone */
         font-size: 14px; /* Riduci la dimensione del testo del bottone */
     }
+
+    .contact-list a {
+        font-size: 14px; /* Riduci la dimensione del testo dei link nella sezione di contatto */
+        padding: 5px; /* Riduci il padding dei link nella sezione di contatto */
+    }
 }
