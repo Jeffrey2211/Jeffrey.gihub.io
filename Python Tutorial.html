@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python - CodeTutorial</title>
+    <link rel="stylesheet" href="Python Tutorial.css">
+</head>
+<body>
+    <header>
+        <h1>Python</h1>
+        <p>Impara le basi di Python, uno dei linguaggi di programmazione più popolari.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Homepage App Tutorial.html">Home</a></li>
+            <li><a href="HTML Tutorial.html">HTML</a></li>
+            <li><a href="CSS Tutorial.html">CSS</a></li>
+            <li><a href="Javascript Tutorial.html">JavaScript</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Introduzione a Python</h2>
+            <p>Python è un linguaggio di programmazione versatile e potente, utilizzato per lo sviluppo web, l'analisi dei dati, l'intelligenza artificiale e molto altro.</p>
+        </section>
+        <section>
+            <h2>Concetti Base di Python</h2>
+            <ul>
+                <li>Variabili e Tipi di Dati</li>
+                <li>Condizioni e Cicli</li>
+                <li>Funzioni</li>
+                <li>Liste e Dizionari</li>
+                <li>Gestione dei File</li>
+                <li>Eccezioni</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Esempi Pratici</h2>
+            <h3>1. Variabili e Tipi di Dati</h3>
+            <pre>
+# Dichiarazione di variabili
+nome = "Alice"
+eta = 30
+pi_greco = 3.14
+
+# Stampa delle variabili
+print(nome)
+print(eta)
+print(pi_greco)
+            </pre>
+            <h3>2. Condizioni e Cicli</h3>
+            <pre>
+# Condizioni
+numero = 10
+if numero > 5:
+    print("Il numero è maggiore di 5")
+else:
+    print("Il numero è 5 o minore")
+
+# Cicli
+for i in range(5):
+    print(i)
+            </pre>
+            <h3>3. Funzioni</h3>
+            <pre>
+def saluta(nome):
+    return f"Ciao, {nome}!"
+
+print(saluta("Mondo"))
+            </pre>
+            <h3>4. Liste e Dizionari</h3>
+            <pre>
+# Liste
+frutti = ["mela", "banana", "ciliegia"]
+print(frutti[1])  # Output: banana
+
+# Dizionari
+studente = {
+    "nome": "Alice",
+    "eta": 20,
+    "corso": "Informatica"
+}
+print(studente["corso"])  # Output: Informatica
+            </pre>
+            <h3>5. Gestione dei File</h3>
+            <pre>
+# Scrittura su file
+with open("esempio.txt", "w") as file:
+    file.write("Ciao, Mondo!")
+
+# Lettura da file
+with open("esempio.txt", "r") as file:
+    contenuto = file.read()
+    print(contenuto)
+            </pre>
+            <h3>6. Eccezioni</h3>
+            <pre>
+try:
+    risultato = 10 / 0
+except ZeroDivisionError:
+    print("Errore: divisione per zero!")
+            </pre>
+            <h3>7. Script Completo</h3>
+            <pre>
+def script_completo():
+    # Variabili e Tipi di Dati
+    nome = "Alice"
+    eta = 30
+    pi_greco = 3.14
+    print(f"Nome: {nome}, Età: {eta}, Pi Greco: {pi_greco}")
+
+    # Condizioni e Cicli
+    numero = 10
+    if numero > 5:
+        print("Il numero è maggiore di 5")
+    else:
+        print("Il numero è 5 o minore")
+
+    for i in range(5):
+        print(i)
+
+    # Funzioni
+    def saluta(nome):
+        return f"Ciao, {nome}!"
+
+    print(saluta("Mondo"))
+
+    # Liste e Dizionari
+    frutti = ["mela", "banana", "ciliegia"]
+    print(frutti[1])  # Output: banana
+
+    studente = {
+        "nome": "Alice",
+        "eta": 20,
+        "corso": "Informatica"
+    }
+    print(studente["corso"])  # Output: Informatica
+
+    # Gestione dei File
+    with open("esempio.txt", "w") as file:
+        file.write("Ciao, Mondo!")
+
+    with open("esempio.txt", "r") as file:
+        contenuto = file.read()
+        print(contenuto)
+
+    # Eccezioni
+    try:
+        risultato = 10 / 0
+    except ZeroDivisionError:
+        print("Errore: divisione per zero!")
+
+script_completo()
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 CodeTutorial. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>

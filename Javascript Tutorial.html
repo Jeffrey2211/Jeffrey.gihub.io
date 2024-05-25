@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - CodeTutorial</title>
+    <link rel="stylesheet" href="Javascript Tutorial.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript</h1>
+        <p>JavaScript è un linguaggio di programmazione che consente di creare contenuti web dinamici.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Homepage App Tutorial.html">Home</a></li>
+            <li><a href="Python Tutorial.html">Python</a></li>
+            <li><a href="HTML Tutorial.html">HTML</a></li>
+            <li><a href="CSS Tutorial.html">CSS</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Introduzione a JavaScript</h2>
+            <p>JavaScript è utilizzato per aggiungere interattività e dinamismo alle pagine web.</p>
+        </section>
+        <section>
+            <h2>Concetti Base di JavaScript</h2>
+            <ul>
+                <li>Variabili e Tipi di Dati</li>
+                <li>Condizioni e Cicli</li>
+                <li>Funzioni</li>
+                <li>Manipolazione del DOM</li>
+                <li>Eventi</li>
+                <li>Array e Oggetti</li>
+                <li>Async/Await</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Esempi Pratici</h2>
+            <h3>1. Variabili e Tipi di Dati</h3>
+            <pre>
+// Variabili
+let nome = "Alice";
+let eta = 30;
+let piGreco = 3.14;
+console.log(`Nome: ${nome}, Età: ${eta}, Pi Greco: ${piGreco}`);
+
+// Tipi di Dati
+let x = 10; // Numero
+let y = "Ciao"; // Stringa
+let z = true; // Booleano
+            </pre>
+            <h3>2. Condizioni e Cicli</h3>
+            <pre>
+// Condizioni
+let numero = 10;
+if (numero > 5) {
+    console.log("Il numero è maggiore di 5");
+} else {
+    console.log("Il numero è 5 o minore");
+}
+
+// Cicli
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+            </pre>
+            <h3>3. Funzioni</h3>
+            <pre>
+// Funzioni
+function saluta(nome) {
+    return `Ciao, ${nome}!`;
+}
+console.log(saluta("Mondo"));
+            </pre>
+            <h3>4. Manipolazione del DOM</h3>
+            <pre>
+// Manipolazione del DOM
+document.addEventListener("DOMContentLoaded", () => {
+    const titolo = document.querySelector("h1");
+    titolo.textContent = "Titolo Cambiato con JavaScript!";
+});
+            </pre>
+            <h3>5. Eventi</h3>
+            <pre>
+// Eventi
+document.addEventListener("DOMContentLoaded", () => {
+    const bottone = document.querySelector("button");
+    bottone.addEventListener("click", () => {
+        alert("Bottone cliccato!");
+    });
+});
+            </pre>
+            <h3>6. Array e Oggetti</h3>
+            <pre>
+// Array
+let numeri = [1, 2, 3, 4, 5];
+console.log(numeri.length); // Lunghezza dell'array
+
+// Oggetti
+let persona = {
+    nome: "Alice",
+    eta: 30,
+    professione: "Sviluppatore"
+};
+console.log(persona.nome); // Accesso alle proprietà
+            </pre>
+            <h3>7. Async/Await</h3>
+            <pre>
+// Async/Await
+function eseguiOperazioneAsync() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Operazione completata");
+        }, 2000);
+    });
+}
+
+async function eseguiTutto() {
+    console.log("Inizio esecuzione");
+    const risultato = await eseguiOperazioneAsync();
+    console.log(risultato);
+    console.log("Fine esecuzione");
+}
+
+eseguiTutto();
+            </pre>
+            <h3>8. Script Completo</h3>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="it"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Esempio Completo JavaScript&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+    &lt;script&gt;
+    // Variabili e Tipi di Dati
+    let nome = "Alice";
+    let eta = 30;
+    let piGreco = 3.14;
+    console.log(`Nome: ${nome}, Età: ${eta}, Pi Greco: ${piGreco}`);
+
+    // Condizioni e Cicli
+    let numero = 10;
+    if (numero > 5) {
+        console.log("Il numero è maggiore di 5");
+    } else {
+        console.log("Il numero è 5 o minore");
+    }
+
+    for (let i = 0; i < 5; i++) {
+        console.log(i);
+    }
+
+    // Funzioni
+    function saluta(nome) {
+        return `Ciao, ${nome}!`;
+    }
+    console.log(saluta("Mondo"));
+
+    // Manipolazione del DOM
+    document.addEventListener("DOMContentLoaded", () => {
+        const titolo = document.querySelector("h1");
+        titolo.textContent = "Titolo Cambiato con JavaScript!";
+    });
+
+    // Eventi
+    document.addEventListener("DOMContentLoaded", () => {
+        const bottone = document.querySelector("button");
+        bottone.addEventListener("click", () => {
+            alert("Bottone cliccato!");
+        });
+    });
+
+    // Array e Oggetti
+    let numeri = [1, 2, 3, 4, 5];
+    console.log(numeri.length);
+
+    let persona = {
+        nome: "Alice",
+        eta: 30,
+        professione: "Sviluppatore"
+    };
+    console.log(persona.nome);
+
+    // Async/Await
+    function eseguiOperazioneAsync() {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve("Operazione completata");
+            }, 2000);
+        });
+    }
+
+    async function eseguiTutto() {
+        console.log("Inizio esecuzione");
+        const risultato = await eseguiOperazioneAsync();
+        console.log(risultato);
+        console.log("Fine esecuzione");
+    }
+
+    eseguiTutto();
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Pagina JavaScript&lt;/h1&gt;
+    &lt;button&gt;Clicca Qui&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 CodeTutorial. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #306998; /* Blu Python */
+    color: #ffd43b; /* Giallo Python */
+    font-size: 16px; /* Ridimensionamento del testo */
+}
+
+header, nav, main, footer {
+    padding: 20px;
+}
+
+header {
+    background-color: #ffd43b; /* Giallo Python */
+    color: #306998; /* Blu Python */
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: #333;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    color: #ffd43b; /* Giallo Python */
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    color: #000;
+    background-color: #555;
+}
+
+main {
+    padding-top: 30px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #ffd43b; /* Giallo Python */
+    color: #306998; /* Blu Python */
+    text-align: center;
+    /* Rimozione del posizionamento fisso */
+}
+
+pre {
+    background-color: #333;
+    color: #ffd43b; /* Giallo Python */
+    padding: 10px;
+    border: 1px solid #000;
+    overflow-x: auto;
+}
+
+/* Ridimensionamento del testo nel main */
+main h2, main p, main ul, main li, main pre {
+    font-size: 20px;
+}

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - CodeTutorial</title>
+    <link rel="stylesheet" href="CSS Tutorial.css">
+</head>
+<body>
+    <header>
+        <h1>CSS</h1>
+        <p>CSS (Cascading Style Sheets) è utilizzato per descrivere la presentazione di un documento HTML.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Homepage App Tutorial.html">Home</a></li>
+            <li><a href="Python Tutorial.html">Python</a></li>
+            <li><a href="HTML Tutorial.html">HTML</a></li>
+            <li><a href="Javascript Tutorial.html">JavaScript</a></li>
+        </ul>
+    </nav>
+<main>
+    <section>
+        <h2>Introduzione a CSS</h2>
+        <p>CSS consente di separare il contenuto dalla presentazione, rendendo le pagine web più belle e facili da mantenere.</p>
+    </section>
+    <section>
+        <h2>Concetti Base di CSS</h2>
+        <ul>
+            <li>Selettori e Proprietà</li>
+            <li>Box Model</li>
+            <li>Flexbox</li>
+            <li>Grid Layout</li>
+            <li>Media Query</li>
+            <li>Transizioni e Animazioni</li>
+            <li>Trasformazioni</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Esempi Pratici</h2>
+        <h3>1. Selettori e Proprietà</h3>
+        <pre>
+/* Selettori e Proprietà */
+body {
+font-family: Arial, sans-serif;
+background-color: #f9f9f9;
+}
+
+h1 {
+color: #333;
+}
+
+p {
+color: #666;
+line-height: 1.5;
+}
+        </pre>
+        <h3>2. Box Model</h3>
+        <pre>
+/* Box Model */
+.box {
+width: 200px;
+padding: 20px;
+border: 1px solid #000;
+margin: 10px;
+}
+        </pre>
+        <h3>3. Flexbox</h3>
+        <pre>
+/* Flexbox */
+.container {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.item {
+padding: 20px;
+background-color: #ddd;
+}
+        </pre>
+        <h3>4. Grid Layout</h3>
+        <pre>
+/* Grid Layout */
+.grid-container {
+display: grid;
+grid-template-columns: auto auto auto;
+background-color: #f9f9f9;
+padding: 10px;
+}
+
+.grid-item {
+border: 1px solid #000;
+padding: 20px;
+text-align: center;
+}
+        </pre>
+        <h3>5. Media Query</h3>
+        <pre>
+/* Media Query */
+@media (max-width: 600px) {
+body {
+    background-color: #ccc;
+}
+}
+        </pre>
+        <h3>6. Transizioni e Animazioni</h3>
+        <pre>
+/* Transizioni e Animazioni */
+.button {
+background-color: #008CBA;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+transition-duration: 0.4s;
+cursor: pointer;
+}
+
+.button:hover {
+background-color: #555555;
+color: white;
+}
+
+/* Animazione */
+@keyframes example {
+0% {transform: scale(1);}
+50% {transform: scale(1.1);}
+100% {transform: scale(1);}
+}
+
+.animate {
+animation-name: example;
+animation-duration: 4s;
+}
+        </pre>
+       
+
+2/2
+
+
+
+
+contiinua
+ChatGPT
+html
+Copia codice
+        <h3>7. Trasformazioni</h3>
+        <pre>
+/* Trasformazioni */
+.box {
+width: 200px;
+height: 200px;
+background-color: red;
+transition: width 2s, height 2s, transform 2s;
+}
+
+.box:hover {
+width: 300px;
+height: 300px;
+transform: rotate(180deg);
+}
+        </pre>
+        <h3>8. Foglio di Stile Completo</h3>
+        <pre>
+/* Foglio di Stile Completo */
+/* Selettori e Proprietà */
+body {
+font-family: Arial, sans-serif;
+background-color: #f9f9f9;
+}
+
+h1 {
+color: #333;
+}
+
+p {
+color: #666;
+line-height: 1.5;
+}
+
+/* Box Model */
+.box {
+width: 200px;
+padding: 20px;
+border: 1px solid #000;
+margin: 10px;
+}
+
+/* Flexbox */
+.container {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.item {
+padding: 20px;
+background-color: #ddd;
+}
+
+/* Grid Layout */
+.grid-container {
+display: grid;
+grid-template-columns: auto auto auto;
+background-color: #f9f9f9;
+padding: 10px;
+}
+
+.grid-item {
+border: 1px solid #000;
+padding: 20px;
+text-align: center;
+}
+
+/* Media Query */
+@media (max-width: 600px) {
+body {
+    background-color: #ccc;
+}
+}
+
+/* Transizioni e Animazioni */
+.button {
+background-color: #008CBA;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+transition-duration: 0.4s;
+cursor: pointer;
+}
+
+.button:hover {
+background-color: #555555;
+color: white;
+}
+
+/* Animazione */
+@keyframes example {
+0% {transform: scale(1);}
+50% {transform: scale(1.1);}
+100% {transform: scale(1);}
+}
+
+.animate {
+animation-name: example;
+animation-duration: 4s;
+}
+
+/* Trasformazioni */
+.box {
+width: 200px;
+height: 200px;
+background-color: red;
+transition: width 2s, height 2s, transform 2s;
+}
+
+.box:hover {
+width: 300px;
+height: 300px;
+transform: rotate(180deg);
+}
+        </pre>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 CodeTutorial. Tutti i diritti riservati.</p>
+</footer>
+</body>
+</html>
