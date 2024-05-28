@@ -1,37 +1,17 @@
+/* Definizione delle variabili per i colori */
 :root {
     --blu-principale: #007bff; /* Blu principale */
     --blu-scuro: #0056b3; /* Blu scuro per evidenziare parti importanti */
     --blu-chiaro: #cce0ff; /* Blu chiaro per sfondo */
 }
 
-.profile-container {
-    text-align: center;
-}
-
-.profile-picture {
-    width: 300px; /* Regola la larghezza dell'immagine */
-    height: 300px; /* Regola l'altezza dell'immagine */
-    border-radius: 50%; /* Rende l'immagine rotonda */
-    overflow: hidden; /* Nasconde eventuali parti dell'immagine che escono dal bordo arrotondato */
-    margin: 20px auto 0; /* Centra l'immagine orizzontalmente e aggiunge un margine superiore di 20px */
-}
-
-.profile-picture img {
-    width: 100%; /* Assicura che l'immagine si adatti correttamente al contenitore */
-    height: auto; /* Impedisce il ridimensionamento distorto dell'immagine */
-}
-
-.profile-name {
-    margin-top: 10px; /* Aggiungi spazio sopra la scritta */
-}
-
-
+/* Stili di base per il layout */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
-    text-align: center; /* Centratura del testo */
+    text-align: center;
 }
 
 header {
@@ -42,7 +22,7 @@ header {
 
 .container {
     width: 80%;
-    margin: 20px auto; /* Centratura del contenuto */
+    margin: 20px auto;
     padding: 20px;
     background-color: white;
     border-radius: 5px;
@@ -54,7 +34,13 @@ h1, h2, h3 {
     color: var(--blu-scuro);
 }
 
-.bio, .skills, .experience, .education, .projects, .contact-form-section {
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Stili per il modulo di contatto */
+.contact {
     margin-bottom: 20px;
     background: white;
     padding: 20px;
@@ -63,135 +49,70 @@ h1, h2, h3 {
     text-align: left;
 }
 
-.bio p, .skills ul, .experience ul, .education ul, .projects .project p {
-    color: #333;
+.contact ul {
+    margin-top: 10px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    background: #e4e4e4;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-ul li:hover {
-    transform: scale(1.05);
-}
-
-.contact-list {
-    list-style: none;
-    padding: 0;
-}
-
-.contact-list li {
-    display: flex;
-    align-items: center;
+.contact ul li {
+    background-color: var(--blu-chiaro);
+    padding: 10px;
+    border-radius: 5px;
     margin-bottom: 10px;
 }
 
-.icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-}
-
-#contact-button {
+.contact-button {
     background-color: var(--blu-principale);
     color: white;
     border: none;
-    padding: 15px 30px; /* Aumenta il padding */
+    padding: 15px 30px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    border-radius: 5px; /* Aggiungi bordi arrotondati */
-}
-
-#contact-button:hover {
-    background-color: var(--blu-scuro);
-}
-
-.view-projects-btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 15px 30px; /* Aumenta il padding */
-    background-color: var(--blu-principale);
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    border-radius: 5px; /* Aggiungi bordi arrotondati */
-}
-
-.view-projects-btn:hover {
-    background-color: var(--blu-scuro);
-}
-
-footer {
-    background-color: var(--blu-principale);
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-.skills ul, .experience ul, .education ul {
-    margin-top: 10px;
-}
-
-.skills ul li, .experience ul li, .education ul li {
-    background-color: var(--blu-chiaro);
-    padding: 10px;
     border-radius: 5px;
 }
 
-.project {
-    background-color: var(--blu-chiaro);
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.contact-form-section {
-    margin-bottom: 150px; /* Assicura che il footer non copra il modulo di contatto */
-}
-
-.projects:hover {
-    transform: translateY(-3px); /* Sposta leggermente verso l'alto al passaggio del mouse */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Ombra più pronunciata */
+.contact-button:hover {
+    background-color: var(--blu-scuro);
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .container {
         width: 100%;
         padding: 10px;
     }
 
     .profile-picture {
-        width: 200px; /* Modifica le dimensioni dell'immagine per dispositivi più piccoli */
+        width: 200px;
         height: 200px;
     }
 
-    .contact-list li {
-        flex-direction: column;
-        align-items: flex-start;
+    .contact {
+        margin-bottom: 150px; /* Assicura che il footer non copra il modulo di contatto */
     }
 
-    .icon {
+    .contact iframe {
+        width: 100%; /* Ridimensiona il modulo per adattarsi al dispositivo */
+    }
+
+    /* Regola le dimensioni del testo all'interno del modulo */
+    .contact h2 {
+        font-size: 24px;
+    }
+
+    .contact p {
+        font-size: 14px;
+    }
+
+    /* Riduci i margini e la spaziatura all'interno del modulo */
+    .contact ul {
+        margin-top: 10px;
+    }
+
+    .contact-list li {
         margin-bottom: 5px;
     }
 
-    footer {
-        position: static; /* Rimuovi il posizionamento fisso */
-        width: 100%; /* Imposta la larghezza al 100% */
-        bottom: auto; /* Rimuovi il posizionamento in basso */
+    .contact-button {
+        margin-top: 10px;
     }
-    
 }
