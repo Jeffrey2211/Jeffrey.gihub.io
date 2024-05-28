@@ -152,6 +152,10 @@ footer {
     transform: translateY(-3px); /* Sposta leggermente verso l'alto al passaggio del mouse */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Ombra più pronunciata */
 }
+.contact-form-container {
+    max-width: 100%;
+    overflow-x: auto;
+}
 
 /* Responsive design */
 @media only screen and (max-width: 768px) {
