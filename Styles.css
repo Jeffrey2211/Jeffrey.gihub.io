@@ -1,3 +1,44 @@
+/* Definizione delle variabili per i colori */
+:root {
+    --blu-principale: #007bff; /* Blu principale */
+    --blu-scuro: #0056b3; /* Blu scuro per evidenziare parti importanti */
+    --blu-chiaro: #cce0ff; /* Blu chiaro per sfondo */
+}
+
+/* Stili di base per il layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+header {
+    background-color: var(--blu-principale);
+    color: white;
+    padding: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+h1, h2, h3 {
+    color: var(--blu-scuro);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 /* Responsive design */
 @media only screen and (max-width: 768px) {
     .container {
@@ -15,7 +56,8 @@
     }
 
     .contact iframe {
-        width: 100%; /* Ridimensiona il modulo per adattarsi al dispositivo */
+        width: calc(100% - 40px); /* Ridimensiona il modulo per adattarsi al dispositivo */
+        margin: 0 20px; /* Aggiunge margini ai lati per una migliore estetica */
     }
 
     /* Regola le dimensioni del testo all'interno del modulo */
