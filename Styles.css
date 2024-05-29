@@ -1,7 +1,4 @@
-.header-text {
-    color: white; /* Imposta il colore del testo su bianco */
-}
-
+/* Impostazioni globali */
 :root {
     --blu-principale: #007bff;
     --blu-scuro: #0056b3;
@@ -16,19 +13,25 @@ body {
     text-align: center;
 }
 
+/* Stili per l'intestazione */
 header {
     background-color: var(--blu-principale);
     color: white;
     padding: 20px 0;
 }
 
+.header-text {
+    color: white; /* Colore del testo */
+}
+
+/* Stili per la sezione del profilo */
 .profile-container {
     background-image: url('Sfondo_immagine_portfolio.jpeg');
-    background-size: cover; /* Adatta l'immagine per coprire l'intero contenitore */
+    background-size: cover;
     background-position: center;
     position: relative;
-    width: 100%; /* Imposta la larghezza del contenitore sulla stessa larghezza dell'immagine del profilo */
-    height: 400px; /* Imposta l'altezza del contenitore sulla stessa altezza dell'immagine del profilo */
+    width: 100%;
+    height: 400px;
 }
 
 .profile-picture {
@@ -37,7 +40,7 @@ header {
     border-radius: 50%;
     overflow: hidden;
     margin: 20px auto 0;
-    border: 5px solid #ccc; /* Aggiungi bordi */
+    border: 5px solid #ccc;
 }
 
 .profile-picture img {
@@ -49,6 +52,7 @@ header {
     margin-top: 10px;
 }
 
+/* Stili per il contenitore principale */
 .container {
     width: 80%;
     margin: 20px auto;
@@ -59,10 +63,12 @@ header {
     overflow: hidden;
 }
 
+/* Stili per i titoli */
 h1, h2, h3 {
     color: var(--blu-scuro);
 }
 
+/* Stili per le sezioni */
 .bio, .skills, .experience, .education, .projects, .contact-form-section {
     margin-bottom: 20px;
     background: white;
@@ -72,10 +78,12 @@ h1, h2, h3 {
     text-align: left;
 }
 
+/* Stili per il testo */
 .bio p, .skills ul, .experience ul, .education ul, .projects .project p {
     color: #333;
 }
 
+/* Stili per le liste */
 ul {
     list-style-type: none;
     padding: 0;
@@ -111,21 +119,24 @@ ul li:hover {
     margin-right: 10px;
 }
 
-.view-projects-btn {
+/* Stili per i pulsanti */
+.view-projects-btn, .project button {
     display: inline-block;
     margin-top: 10px;
-    padding: 15px 30px;
+    padding: 10px 20px;
     background-color: var(--blu-principale);
     color: white;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.view-projects-btn:hover {
+.view-projects-btn:hover, .project button:hover {
     background-color: var(--blu-scuro);
 }
 
+/* Stili per il piè di pagina */
 footer {
     background-color: var(--blu-principale);
     color: white;
@@ -136,17 +147,8 @@ footer {
     bottom: 0;
 }
 
-.skills ul, .experience ul, .education ul {
-    margin-top: 10px;
-}
-
-.skills ul li, .experience ul li, .education ul li {
-    background-color: var(--blu-chiaro);
-    padding: 10px;
-    border-radius: 5px;
-}
-
-projects-container {
+/* Stili specifici per i progetti */
+.projects-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -157,10 +159,10 @@ projects-container {
     background-color: var(--blu-chiaro);
     padding: 10px;
     border-radius: 5px;
-    margin-bottom: 10px;
     text-align: center;
     flex: 1 1 calc(50% - 20px);
     box-sizing: border-box;
+    height: auto; /* Altezza automatica */
 }
 
 .project img {
@@ -173,31 +175,12 @@ projects-container {
     margin-top: 10px;
 }
 
-.project {
-    /* Altri stili */
-    height: 400px; /* Altezza fissa */
-}
-
 .project button {
-    display: inline-block;
     margin-top: 10px;
     margin-bottom: 10px; /* Aggiungi margine inferiore */
-    padding: 10px 20px;
-    background-color: var(--blu-principale);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.project button:hover {
-    background-color: var(--blu-scuro);
-}
-
-.contact-form-section {
-    margin-bottom: 150px;
-}
+/* Stili responsivi */
 @media only screen and (max-width: 768px) {
     .projects-container {
         flex-direction: column;
@@ -207,13 +190,13 @@ projects-container {
     .project {
         width: 100%;
         margin-bottom: 20px;
-        position: relative; /* Imposta il posizionamento relativo */
+        position: relative;
     }
 
     .project button {
-        position: absolute; /* Imposta il posizionamento assoluto rispetto al contenitore padre .project */
-        bottom: 10px; /* Posiziona il bottone a 10px dal fondo del contenitore padre */
-        left: 50%; /* Posiziona il bottone al centro */
-        transform: translateX(-50%); /* Centra il bottone orizzontalmente */
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
