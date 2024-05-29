@@ -162,7 +162,7 @@ footer {
     text-align: center;
     flex: 1 1 calc(50% - 20px);
     box-sizing: border-box;
-    height: auto; /* Altezza automatica */
+    height: 300px; /* Altezza fissa */
 }
 
 .project img {
