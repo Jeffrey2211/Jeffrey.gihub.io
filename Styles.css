@@ -21,7 +21,7 @@ header {
 }
 
 .header-text {
-    color: white; /* Colore del testo */
+    color: white;
 }
 
 /* Stili per la sezione del profilo */
@@ -79,7 +79,7 @@ h1, h2, h3 {
 }
 
 /* Stili per il testo */
-.bio p, .skills ul, .experience ul, .education ul, .projects .project p {
+.bio p, .skills ul, .experience ul, .education ul {
     color: #333;
 }
 
@@ -147,17 +147,6 @@ footer {
     bottom: 0;
 }
 
-/* Stili per le abilità, esperienze e istruzione */
-.skills ul, .experience ul, .education ul {
-    margin-top: 10px;
-}
-
-.skills ul li, .experience ul li, .education ul li {
-    background-color: var(--blu-chiaro);
-    padding: 10px;
-    border-radius: 5px;
-}
-
 /* Stili specifici per i progetti */
 .projects-container {
     display: flex;
@@ -170,7 +159,6 @@ footer {
     background-color: var(--blu-chiaro);
     padding: 10px;
     border-radius: 5px;
-    margin-bottom: 10px;
     text-align: center;
     flex: 1 1 calc(50% - 20px);
     box-sizing: border-box;
@@ -189,16 +177,9 @@ footer {
 
 .project button {
     margin-top: 10px;
-    margin-bottom: 10px; /* Aggiungi margine inferiore */
 }
 
-/* Effetti al passaggio del mouse sui progetti */
-.project:hover {
-    transform: translateY(-3px); /* Sposta leggermente verso l'alto al passaggio del mouse */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Ombra più pronunciata */
-}
-
-/* Stili per la sezione del modulo di contatto */
+/* Stili per il modulo di contatto */
 .contact-form-section {
     margin-bottom: 150px; /* Assicura che il footer non copra il modulo di contatto */
 }
@@ -224,7 +205,6 @@ footer {
         margin: 0 20px; /* Aggiunge margini ai lati per una migliore estetica */
     }
 
-    /* Regola le dimensioni del testo all'interno del modulo */
     .contact h2 {
         font-size: 24px;
     }
@@ -233,7 +213,6 @@ footer {
         font-size: 14px;
     }
 
-    /* Riduci i margini e la spaziatura all'interno del modulo */
     .contact ul {
         margin-top: 10px;
     }
@@ -242,15 +221,17 @@ footer {
         margin-bottom: 5px;
     }
 
-    .projects-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .project {
         width: 100%;
         margin-bottom: 20px;
         position: relative;
         height: auto;
+    }
+
+    .project button {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
