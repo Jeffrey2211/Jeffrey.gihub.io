@@ -188,6 +188,9 @@ footer {
 @media only screen and (max-width: 768px) {
     .container {
         width: 100%;
+        max-width: 768px; /* Imposta una larghezza massima */
+        margin-left: auto;
+        margin-right: auto; /* Centra il contenuto nella pagina */
         padding: 10px;
     }
 
@@ -240,5 +243,5 @@ footer {
 
     .contact a[href="https://www.linkedin.com/in/"]:before {
         content: "LinkedIn";
-        }
-    
+    }
+}
