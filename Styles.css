@@ -38,12 +38,10 @@ header {
     transform: translate(-50%, -50%); /* Sposta di -50% della larghezza e -50% dell'altezza rispetto al centro */
 }
 
-
-
 .profile-picture img {
     width: 100%;
     height: auto;
-    display: none; /* Nascondi l'immagine del profilo */
+    /* display: none; */ /* Rimuovi o commenta questa riga */
 }
 
 .profile-name {
