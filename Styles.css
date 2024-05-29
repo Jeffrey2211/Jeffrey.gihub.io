@@ -55,8 +55,6 @@ header {
     overflow: hidden;
 }
 
-
-
 h1, h2, h3 {
     color: var(--blu-scuro);
 }
@@ -212,7 +210,4 @@ footer {
     }
 
     .project {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
+        width: 
