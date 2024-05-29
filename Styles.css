@@ -192,16 +192,17 @@ footer {
     margin-bottom: 10px; /* Aggiungi margine inferiore */
 }
 
+/* Effetti al passaggio del mouse sui progetti */
+.project:hover {
+    transform: translateY(-3px); /* Sposta leggermente verso l'alto al passaggio del mouse */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Ombra più pronunciata */
+}
+
 /* Stili per la sezione del modulo di contatto */
 .contact-form-section {
     margin-bottom: 150px; /* Assicura che il footer non copra il modulo di contatto */
 }
 
-/* Effetti al passaggio del mouse sui progetti */
-.projects:hover {
-    transform: translateY(-3px); /* Sposta leggermente verso l'alto al passaggio del mouse */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Ombra più pronunciata */
-}
 /* Responsive design */
 @media only screen and (max-width: 768px) {
     .container {
