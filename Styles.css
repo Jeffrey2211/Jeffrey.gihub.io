@@ -237,4 +237,8 @@ footer {
     .projects-container {
         display: block; /* Visualizza i progetti uno sotto l'altro */
     }
-}
+
+    .contact a[href="https://www.linkedin.com/in/"]:before {
+        content: "LinkedIn";
+        }
+    
