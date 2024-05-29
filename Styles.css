@@ -161,6 +161,7 @@ footer {
     text-align: center;
     flex: 1 1 calc(50% - 20px);
     box-sizing: border-box;
+    position: relative; /* Imposta il posizionamento relativo per consentire il posizionamento assoluto dei bottoni */
 }
 
 .project img {
@@ -187,23 +188,15 @@ footer {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-.project button:hover {
-    background-color: var(--blu-scuro);
-}
-
-.project {
-    position: relative; /* Imposta il posizionamento relativo per consentire il posizionamento assoluto dei bottoni */
-}
-
-.project button {
     position: absolute; /* Imposta il posizionamento assoluto */
     bottom: 10px; /* Posiziona il bottone a 10px dal fondo del contenitore */
     left: 50%; /* Posiziona il bottone al centro */
     transform: translateX(-50%); /* Centra il bottone orizzontalmente */
 }
 
+.project button:hover {
+    background-color: var(--blu-scuro);
+}
 
 .contact-form-section {
     margin-bottom: 150px;
@@ -228,4 +221,3 @@ footer {
         transform: translateX(-50%); /* Centra il bottone orizzontalmente */
     }
 }
-
