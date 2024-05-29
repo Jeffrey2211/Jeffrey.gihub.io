@@ -233,4 +233,8 @@ footer {
         margin-top: 10px;
         transform: none;
     }
+
+    .projects-container {
+        display: block; /* Visualizza i progetti uno sotto l'altro */
+    }
 }
