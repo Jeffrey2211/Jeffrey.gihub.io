@@ -20,14 +20,10 @@ header {
 
 .profile-container {
     background-image: url('Sfondo_immagine_portfolio.jpeg');
-    background-size: cover;
+    background-size: cover; /* Adatta l'immagine per coprire l'intero contenitore */
     background-position: center;
-    position: relative; /* Aggiungi la posizione relativa */
-    width: 100%; /* Assicurati che il contenitore occupi tutta la larghezza */
-    height: 400px; /* Altezza desiderata */
-    overflow: hidden; /* Nascondi l'overflow */
+    position: relative;
 }
-
 .profile-picture {
     width: 100%; /* Assicura che l'immagine occupi tutta la larghezza del contenitore */
     height: 100%; /* Assicura che l'immagine occupi tutta l'altezza del contenitore */
