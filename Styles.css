@@ -173,13 +173,15 @@ projects-container {
     margin-top: 10px;
 }
 
-.project p {
-    color: #333;
+.project {
+    /* Altri stili */
+    height: 400px; /* Altezza fissa */
 }
 
 .project button {
     display: inline-block;
     margin-top: 10px;
+    margin-bottom: 10px; /* Aggiungi margine inferiore */
     padding: 10px 20px;
     background-color: var(--blu-principale);
     color: white;
