@@ -193,6 +193,18 @@ footer {
     background-color: var(--blu-scuro);
 }
 
+.project {
+    position: relative; /* Imposta il posizionamento relativo per consentire il posizionamento assoluto dei bottoni */
+}
+
+.project button {
+    position: absolute; /* Imposta il posizionamento assoluto */
+    bottom: 10px; /* Posiziona il bottone a 10px dal fondo del contenitore */
+    left: 50%; /* Posiziona il bottone al centro */
+    transform: translateX(-50%); /* Centra il bottone orizzontalmente */
+}
+
+
 .contact-form-section {
     margin-bottom: 150px;
 }
