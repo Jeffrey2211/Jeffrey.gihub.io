@@ -19,7 +19,10 @@ header {
 }
 
 .profile-container {
-    text-align: center;
+    background-image: url('Sfondo_immagine_portfolio.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Aggiungi la posizione relativa */
 }
 
 .profile-picture {
@@ -29,12 +32,12 @@ header {
     overflow: hidden;
     margin: 20px auto 0;
     border: 5px solid #ccc;
-    background-image: url('Sfondo_immagine_portfolio.jpeg');
-    background-size: cover;
-    background-position: center;
-    position: relative; /* Aggiungi la posizione relativa */
-    z-index: -1; /* Imposta lo z-index negativo */
+    position: absolute; /* Cambia la posizione in assoluta */
+    top: 50%; /* Posiziona rispetto al 50% della parte superiore del contenitore genitore */
+    left: 50%; /* Posiziona rispetto al 50% della parte sinistra del contenitore genitore */
+    transform: translate(-50%, -50%); /* Sposta di -50% della larghezza e -50% dell'altezza rispetto al centro */
 }
+
 
 
 .profile-picture img {
