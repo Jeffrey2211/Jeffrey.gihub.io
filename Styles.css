@@ -4,6 +4,20 @@
     --blu-chiaro: #cce0ff;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+header {
+    background-color: var(--blu-principale);
+    color: white;
+    padding: 20px 0;
+}
+
 .profile-container {
     text-align: center;
 }
@@ -23,20 +37,6 @@
 
 .profile-name {
     margin-top: 10px;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    text-align: center;
-}
-
-header {
-    background-color: var(--blu-principale);
-    color: white;
-    padding: 20px 0;
 }
 
 .container {
@@ -136,12 +136,21 @@ footer {
     border-radius: 5px;
 }
 
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
 .project {
     background-color: var(--blu-chiaro);
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
     text-align: center;
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
 }
 
 .project img {
@@ -174,13 +183,6 @@ footer {
     background-color: var(--blu-scuro);
 }
 
-.projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-around;
-}
-
 .contact-form-section {
     margin-bottom: 150px;
 }
@@ -196,33 +198,13 @@ footer {
         height: 200px;
     }
 
-    .contact {
-        margin-bottom: 150px;
-    }
-
-    .contact iframe {
-        width: calc(100% - 40px);
-        margin: 0 20px;
-    }
-
-    .contact h2 {
-        font-size: 24px;
-    }
-
-    .contact p {
-        font-size: 14px;
-    }
-
-    .contact ul {
-        margin-top: 10px;
-    }
-
-    .contact-list li {
-        margin-bottom: 5px;
-    }
-
     .projects-container {
         flex-direction: column;
         align-items: center;
+    }
+
+    .project {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
