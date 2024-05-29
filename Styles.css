@@ -210,16 +210,6 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .profile-picture {
-        width: 200px;
-        height: 200px;
-    }
-
     .projects-container {
         flex-direction: column;
         align-items: center;
@@ -228,5 +218,14 @@ footer {
     .project {
         width: 100%;
         margin-bottom: 20px;
+        position: relative; /* Imposta il posizionamento relativo */
+    }
+
+    .project button {
+        position: absolute; /* Imposta il posizionamento assoluto rispetto al contenitore padre .project */
+        bottom: 10px; /* Posiziona il bottone a 10px dal fondo del contenitore padre */
+        left: 50%; /* Posiziona il bottone al centro */
+        transform: translateX(-50%); /* Centra il bottone orizzontalmente */
     }
 }
+
