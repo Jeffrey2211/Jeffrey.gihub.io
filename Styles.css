@@ -27,7 +27,7 @@ header {
     background-size: cover; /* Adatta l'immagine per coprire l'intero contenitore */
     background-position: center;
     position: relative;
-    width: 400px; /* Imposta la larghezza del contenitore sulla stessa larghezza dell'immagine del profilo */
+    width: 100%; /* Imposta la larghezza del contenitore sulla stessa larghezza dell'immagine del profilo */
     height: 400px; /* Imposta l'altezza del contenitore sulla stessa altezza dell'immagine del profilo */
 }
 
