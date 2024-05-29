@@ -179,8 +179,45 @@ footer {
     margin-top: 10px;
 }
 
-/* Stili responsivi */
+/* Responsive design */
 @media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .profile-picture {
+        width: 200px;
+        height: 200px;
+    }
+
+    .contact {
+        margin-bottom: 150px; /* Assicura che il footer non copra il modulo di contatto */
+    }
+
+    .contact iframe {
+        width: calc(100% - 40px); /* Ridimensiona il modulo per adattarsi al dispositivo */
+        margin: 0 20px; /* Aggiunge margini ai lati per una migliore estetica */
+    }
+
+    /* Regola le dimensioni del testo all'interno del modulo */
+    .contact h2 {
+        font-size: 24px;
+    }
+
+    .contact p {
+        font-size: 14px;
+    }
+
+    /* Riduci i margini e la spaziatura all'interno del modulo */
+    .contact ul {
+        margin-top: 10px;
+    }
+
+    .contact-list li {
+        margin-bottom: 5px;
+    }
+}
     .project {
         width: 100%;
         margin-bottom: 20px;
