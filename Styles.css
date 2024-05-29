@@ -183,15 +183,12 @@ footer {
 .contact-form-section {
     margin-bottom: 150px; /* Assicura che il footer non copra il modulo di contatto */
 }
+
 /* Responsive design */
 @media only screen and (max-width: 768px) {
     .container {
-        width: 95%;
+        width: 100%;
         padding: 10px;
-    }
-
-    .profile-container {
-        height: auto;
     }
 
     .profile-picture {
@@ -236,4 +233,4 @@ footer {
         margin-top: 10px;
         transform: none;
     }
-    
+}
