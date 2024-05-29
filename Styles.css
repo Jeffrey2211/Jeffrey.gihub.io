@@ -23,6 +23,9 @@ header {
     background-size: cover;
     background-position: center;
     position: relative; /* Aggiungi la posizione relativa */
+    width: 100%; /* Aggiungi la larghezza per adattarsi */
+    height: 400px; /* Aggiungi l'altezza desiderata */
+    overflow: hidden; /* Assicurati che l'overflow sia nascosto */
 }
 
 .profile-picture {
@@ -38,6 +41,11 @@ header {
     transform: translate(-50%, -50%); /* Sposta di -50% della larghezza e -50% dell'altezza rispetto al centro */
 }
 
+.profile-picture img {
+    width: 100%;
+    height: auto;
+}
+
 .profile-name {
     margin-top: 10px;
 }
@@ -51,6 +59,7 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
+
 
 h1, h2, h3 {
     color: var(--blu-scuro);
