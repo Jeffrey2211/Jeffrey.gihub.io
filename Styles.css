@@ -29,7 +29,7 @@ header {
     overflow: hidden;
     margin: 20px auto 0;
     border: 5px solid #ccc; /* Aggiungi bordi */
-    background-image: url('url_dell_immagine_di_sfondo.jpg'); /* Aggiungi l'immagine di sfondo */
+    background-image: url('Sfondo_immagine_portfolio.jpeg'); /* Aggiungi l'immagine di sfondo */
     background-size: cover; /* Imposta la dimensione dell'immagine di sfondo */
     background-position: center; /* Posiziona l'immagine di sfondo al centro */
 }
