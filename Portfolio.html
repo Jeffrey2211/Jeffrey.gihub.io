@@ -199,5 +199,64 @@
         domain="www.chatbase.co"
         defer>
     </script>
+      <!-- Container per il chatbot -->
+    <div id="chatbot-container">
+        <div id="chatbot">
+            <!-- Iframe del chatbot -->
+            <iframe
+                src="https://www.chatbase.co/chatbot-iframe/kMVLTwT4iQCa1iyKtgMho"
+                width="100%"
+                height="100%"
+                frameborder="0"
+                scrolling="no"
+            ></iframe>
+        </div>
+    </div>
+    <script
+        src="https://www.chatbase.co/embed.min.js"
+        chatbotId="kMVLTwT4iQCa1iyKtgMho"
+        domain="www.chatbase.co"
+        defer
+    ></script>
+
+    <!-- JavaScript per far seguire il chatbot -->
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const chatbotContainer = document.getElementById('chatbot-container');
+            let isChatbotOpen = false;
+
+            // Funzione per aprire il chatbot
+            function apriChatbot() {
+                chatbotContainer.style.display = 'block';
+                isChatbotOpen = true;
+            }
+
+            // Funzione per chiudere il chatbot
+            function chiudiChatbot() {
+                chatbotContainer.style.display = 'none';
+                isChatbotOpen = false;
+            }
+
+            // Gestione dell'apertura e chiusura del chatbot
+            window.addEventListener('click', (event) => {
+                if (!isChatbotOpen) {
+                    apriChatbot();
+                }
+            });
+
+            // Chiudi il chatbot se si clicca fuori dalla sua area
+            window.addEventListener('click', (event) => {
+                if (isChatbotOpen && !chatbotContainer.contains(event.target)) {
+                    chiudiChatbot();
+                }
+            });
+
+            // Funzione per far seguire il chatbot durante lo scroll
+            window.addEventListener('scroll', (event) => {
+                chatbotContainer.style.bottom = '20px'; // Posizione desiderata dal basso
+                chatbotContainer.style.left = '20px'; // Posizione desiderata dalla sinistra
+            });
+        });
+    </script>
 </body>
 </html>
