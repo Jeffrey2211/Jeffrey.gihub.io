@@ -183,6 +183,23 @@ footer {
 .contact-form-section {
     margin-bottom: 150px; /* Assicura che il footer non copra il modulo di contatto */
 }
+.credential-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--blu-principale);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Assicura che il link non abbia sottolineatura */
+    margin-left: 10px; /* Spazio a sinistra del pulsante */
+}
+
+.credential-button:hover {
+    background-color: var(--blu-scuro);
+}
+
 
 /* Responsive design */
 @media only screen and (max-width: 768px) {
