@@ -1,247 +1,170 @@
-/* Impostazioni globali */
-:root {
-    --blu-principale: #007bff;
-    --blu-scuro: #0056b3;
-    --blu-chiaro: #cce0ff;
-}
-
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, a, button {
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
-    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
 }
 
-/* Stili per l'intestazione */
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
 header {
-    background-color: var(--blu-principale);
-    color: white;
+    background: #333;
+    color: #fff;
     padding: 20px 0;
+    text-align: center;
 }
 
 .header-text {
-    color: white;
+    margin: 0;
 }
 
-/* Stili per la sezione del profilo */
 .profile-container {
-    background-image: url('Sfondo_immagine_portfolio.jpeg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    width: 100%;
-    height: 400px;
-}
-
-.profile-picture {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 20px auto 0;
-    border: 5px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .profile-picture img {
-    width: 100%;
-    height: auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
 }
 
-.profile-name {
-    margin-top: 10px;
-}
-
-/* Stili per il contenitore principale */
 .container {
-    width: 80%;
-    margin: 20px auto;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
 }
 
-/* Stili per i titoli */
-h1, h2, h3 {
-    color: var(--blu-scuro);
+section {
+    margin-bottom: 40px;
 }
 
-/* Stili per le sezioni */
-.bio, .skills, .experience, .education, .projects, .contact-form-section {
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
     margin-bottom: 20px;
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
 }
 
-/* Stili per il testo */
-.bio p, .skills ul, .experience ul, .education ul {
-    color: #333;
-}
-
-/* Stili per le liste */
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    background: #e4e4e4;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-ul li:hover {
-    transform: scale(1.05);
-}
-
-.contact-list {
-    list-style: none;
-    padding: 0;
-}
-
-.contact-list li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-}
-
-/* Stili per i pulsanti */
-.view-projects-btn, .project button, .credential-button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: var(--blu-principale);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-decoration: none; /* Assicura che il link non abbia sottolineatura */
-}
-
-.view-projects-btn:hover, .project button:hover, .credential-button:hover {
-    background-color: var(--blu-scuro);
-}
-
-/* Stili per il piè di pagina */
-footer {
-    background-color: var(--blu-principale);
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-    bottom: 0;
-}
-
-/* Stili specifici per i progetti */
 .projects-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .project {
-    background-color: var(--blu-chiaro);
-    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
     border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 45%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
-    flex: 1 1 calc(50% - 20px);
-    box-sizing: border-box;
-    height: auto; /* Altezza automatica */
 }
 
 .project img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
 }
 
 .project h3 {
-    margin-top: 10px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
 .project button {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.project button:hover {
+    background: #555;
+}
+
+.bio p, .contact-list, .education ul, .skills ul {
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
-/* Stili per il modulo di contatto */
-.contact-form-section {
-    margin-bottom: 150px; /* Assicura che il footer non copra il modulo di contatto */
+.contact-list {
+    padding-left: 20px;
 }
 
-/* Responsive design */
-@media only screen and (max-width: 768px) {
-    .container {
-        width: 100%;
-        max-width: 768px; /* Imposta una larghezza massima */
-        margin-left: auto;
-        margin-right: auto; /* Centra il contenuto nella pagina */
-        padding: 10px;
-    }
+.contact-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
 
-    .profile-picture {
-        width: 200px;
-        height: 200px;
-    }
+.contact-list .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
 
-    .contact {
-        margin-bottom: 150px; /* Assicura che il footer non copra il modulo di contatto */
-    }
+.credential-button {
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
 
-    .contact iframe {
-        width: calc(100% - 40px); /* Ridimensiona il modulo per adattarsi al dispositivo */
-        margin: 0 20px; /* Aggiunge margini ai lati per una migliore estetica */
-    }
+.credential-button:hover {
+    background: #555;
+}
 
-    .contact h2 {
-        font-size: 24px;
-    }
+.skills h3 {
+    margin-top: 20px;
+}
 
-    .contact p {
-        font-size: 14px;
-    }
-
-    .contact ul {
-        margin-top: 10px;
-    }
-
-    .contact-list li {
-        margin-bottom: 5px;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
     }
 
     .project {
-        width: 100%;
-        margin-bottom: 20px;
-        position: relative;
-        height: auto;
+        width: 90%;
     }
 
-    .project button {
-        position: static;
-        margin-top: 10px;
-        transform: none;
+    .contact-list {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 0;
     }
 
-    .projects-container {
-        display: block; /* Visualizza i progetti uno sotto l'altro */
+    .profile-picture img {
+        width: 100px;
+        height: 100px;
     }
 
-    .contact a[href="https://www.linkedin.com/in/"]:before {
-        content: "LinkedIn";
+    h2 {
+        font-size: 1.5em;
     }
 }
