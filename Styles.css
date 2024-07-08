@@ -39,14 +39,13 @@ header {
     height: 300px;
     border-radius: 50%;
     overflow: hidden;
-    margin: 20px auto 0;
+    margin: 40px auto 0;
     border: 5px solid #ccc;
 }
 
 .profile-picture img {
     width: 100%;
     height: auto;
-    margin-top: 10px
 }
 
 .profile-name {
@@ -201,7 +200,7 @@ footer {
     .profile-picture {
         width: 200px;
         height: 200px;
-        margin: 0 auto; /* Centra l'immagine */
+        margin: 25px; /* Centra l'immagine */
         display: block; /* Assicura che l'immagine sia un blocco */
     }
 
