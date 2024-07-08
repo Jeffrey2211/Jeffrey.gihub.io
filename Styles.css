@@ -138,6 +138,16 @@ h2 {
     margin-top: 20px;
 }
 
+.experience {
+    margin-bottom: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .projects-container {
@@ -153,13 +163,15 @@ h2 {
         padding-left: 0;
     }
 }
-.experience
+
+.experience {
     margin-bottom: 20px;
     background: white;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: left;
+}
 
 @media (max-width: 480px) {
     header {
