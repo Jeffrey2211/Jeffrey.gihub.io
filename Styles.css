@@ -197,13 +197,14 @@ footer {
 
 /* Responsive design */
 @media only screen and (max-width: 768px) {
+    .profile-container {
+        height: auto;
+        padding: 20px 0;
+    }
+
     .profile-picture {
         width: 200px;
         height: 200px;
-    }
-
-    .profile-container {
-        text-align: center; /* Centra anche il contenitore del profilo */
     }
 
     .project {
@@ -221,9 +222,5 @@ footer {
 
     .projects-container {
         display: block; /* Visualizza i progetti uno sotto l'altro */
-    }
-
-    .contact a[href="https://www.linkedin.com/in/"]:before {
-        content: "LinkedIn";
     }
 }
