@@ -46,6 +46,7 @@ header {
 .profile-picture img {
     width: 100%;
     height: auto;
+    margin-top: 10px
 }
 
 .profile-name {
