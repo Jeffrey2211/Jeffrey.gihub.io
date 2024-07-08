@@ -136,7 +136,6 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
     width: 100%;
     bottom: 0;
 }
@@ -201,6 +200,12 @@ footer {
     .profile-picture {
         width: 200px;
         height: 200px;
+        margin: 0 auto; /* Centra l'immagine */
+        display: block; /* Assicura che l'immagine sia un blocco */
+    }
+
+    .profile-container {
+        text-align: center; /* Centra anche il contenitore del profilo */
     }
 
     .project {
