@@ -199,9 +199,7 @@ footer {
 @media only screen and (max-width: 768px) {
     .profile-picture {
         width: 200px;
-        height: 200px;
-        margin: 25px; /* Centra l'immagine */
-        display: block; /* Assicura che l'immagine sia un blocco */
+        height: 150px;
     }
 
     .profile-container {
