@@ -239,6 +239,10 @@ footer {
 
 /* Responsive design */
 @media only screen and (max-width: 768px) {
+    nav {
+        display: none; /* Nasconde la barra di navigazione */
+        }
+    
     .profile-container {
         height: auto;
         padding: 20px 0;
