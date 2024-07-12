@@ -59,10 +59,14 @@ header {
 }
 
 /* Stili per i titoli */
-h1, h2, h3 {
+h1, h2 {
     color: var(--blu-scuro);
+    text-align: center;
 }
 
+h3 {
+    color: var(--blu-scuro);
+}
 /* Stili per la barra di navigazione */
 nav {
     background: var(--blu-principale); 
