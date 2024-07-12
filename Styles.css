@@ -272,7 +272,15 @@ ul li:hover {
 }
 
 /* Responsive design */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px){
+    @media only screen and (max-width: 768px) {
+    nav {
+        z-index: 1000; /* Assicura che la barra di navigazione sia sopra gli altri contenuti se necessario */
+        width: 100%;
+        padding: 10px 0; /* Regola il padding se necessario */
+    }
+
+
     .profile-container {
         height: auto;
         padding: 20px 0;
