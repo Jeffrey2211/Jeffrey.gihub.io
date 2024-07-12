@@ -16,6 +16,16 @@
 </head>
 <body>
     <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#projects">Progetti</a></li>
+                <li><a href="#bio">Chi sono</a></li>
+                <li><a href="#contact">Contatti</a></li>
+                <li><a href="#education">Educazione</a></li>
+                <li><a href="#experience">Esperienze</a></li>
+                <li><a href="#skills">Competenze</a></li>
+            </ul>
+        </nav>
         <h1 class="header-text">Portfolio di Jeffrey</h1>
         <div class="profile-container">
             <div class="profile-picture">
@@ -27,7 +37,7 @@
         </div>
     </header>
     <div class="container">
-        <section class="projects">
+        <section  id="projects" class="projects">
             <h2>Progetti</h2>
             <div class="projects-container">
                 <div class="project">
@@ -64,13 +74,13 @@
             </div>
         </section>
 
-        <section class="bio">
+        <section id="bio" class="bio">
             <h2>Chi sono</h2>
             <p>Ciao, sono Jeffrey Forcella, ho terminato i miei studi presso Academy Rapido e sono pronto a mettere in pratica ciò che ho imparato. 
                Amo la tecnologia e sono appassionato di sicurezza informatica. Durante il mio percorso formativo, ho acquisito le competenze necessarie 
                per individuare e rispondere alle minacce informatiche, mantenendo sicuri i dati e le infrastrutture critiche. Non vedo l'ora di iniziare la mia carriera come analista SOC e contribuire a proteggere le aziende dalle crescenti sfide della cyber sicurezza.</p>
             <h2>Contatti</h2>
-            <ul class="contact-list">
+            <ul id="contact" class="contact-list">
                 <li>
                     <img src="email-icon.jpeg" alt="Icona Email" class="icon">
                     Email: <a href="mailto:jeffreyje926@gmail.com">jeffreyje926@gmail.com</a>
@@ -91,7 +101,7 @@
             </ul>
         </section>
         
-        <section class="education">
+        <section id="education" class="education">
             <h2>Educazione</h2>
             <ul>
                 <li>
@@ -120,7 +130,7 @@
             </ul>
         </section>
         
-        <section class="experience mb-4">
+        <section id="experience" class="experience mb-4">
             <h2>Esperienze lavorative</h2>
             <ul class="list-unstyled">
                 <li>
@@ -142,7 +152,7 @@
             </ul>
         </section>
         
-        <section class="skills">
+        <section id="skills" class="skills">
             <h2>Competenze trasversali</h2>
             <ul>
                 <li>Pensiero critico</li>
@@ -192,17 +202,19 @@
         <p>&copy; 2024 Jeffrey Forcella</p>
     </footer>
 
-<!-- Script per caricare il chatbot 
+    </div>
+    <!--Script per caricare il chatbot -->
 <script src="https://www.chatbase.co/embed.min.js" defer></script>
--->
-<!-- Blocco di script per configurare il chatbot 
+
+<!-- Blocco di script per configurare il chatbot -->
 <script>
     window.embeddedChatbotConfig = {
         chatbotId: "kMVLTwT4iQCa1iyKtgMho",
         domain: "www.chatbase.co"
     };
 </script>
--->
-    </div>
+<!-- Collegamento al file JavaScript esterno -->
+<script src="script_portfolio.js"></script>
+
 </body>
 </html>
