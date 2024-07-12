@@ -6,11 +6,12 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
     text-align: center;
+    color: #333; /* Colore del testo principale */
 }
 
 /* Stili per l'intestazione */
@@ -62,10 +63,51 @@ h1, h2, h3 {
     color: var(--blu-scuro);
 }
 
+/* Stili per la barra di navigazione */
+nav {
+    background: var(--blu-principale); 
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-radius: 0 0 10px 10px; /* Bordi arrotondati solo in basso */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    background-color: rgba(54, 48, 48, 0.2); /* Sfondo grigio */
+    border-radius: 15px; /* Bordi arrotondati */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 18px; /* Testo più grande */
+    letter-spacing: 1px; /* Spaziatura leggermente aumentata */
+    padding: 10px 15px; /* Spaziatura interna */
+    border-radius: 5px; /* Assicura che il link sia coperto dallo sfondo */
+}
+
+nav ul li a:hover {
+    color: var(--blu-chiaro);
+    transform: translateY(-2px); /* Effetto hover più evidente */
+}
+
 /* Stili per le sezioni */
 .bio, .skills, .experience, .education, .projects, .contact-form-section {
     margin-bottom: 20px;
-    background: white;
+    background: rgb(253, 251, 251);
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -123,11 +165,12 @@ ul li:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .view-projects-btn:hover, .project button:hover {
     background-color: var(--blu-scuro);
+    transform: translateY(-2px);
 }
 
 /* Stili per il piè di pagina */
@@ -155,7 +198,7 @@ footer {
     text-align: center;
     flex: 1 1 calc(50% - 20px);
     box-sizing: border-box;
-    height: auto; /* Altezza automatica */
+    height: auto;
 }
 
 .project img {
@@ -171,6 +214,36 @@ footer {
 .project button {
     margin-top: 10px;
 }
+
+/* Animazioni di base */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in forwards;
+}
+
+/* Transizioni per hover */
+ul li {
+    background: #e4e4e4;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease, transform 0.3s ease;
+}
+
+ul li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
 
 /* Stili per il modulo di contatto */
 .contact-form-section {
@@ -193,7 +266,6 @@ footer {
 .credential-button:hover {
     background-color: var(--blu-scuro);
 }
-
 
 /* Responsive design */
 @media only screen and (max-width: 768px) {
