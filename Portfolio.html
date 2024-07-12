@@ -12,19 +12,40 @@
     <meta property="og:url" content="URL_del_sito">
     <meta property="og:type" content="website">
     <title>Portfolio di Jeffrey</title>
+    <!-- Includi il foglio di stile di Bootstrap (puoi usare il CDN o scaricare Bootstrap localmente) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="Styles.css">
 </head>
 <body>
-    <nav id="navbar">
-            <ul>
-                <li><a href="#projects">Progetti</a></li>
-                <li><a href="#bio">Chi sono</a></li>
-                <li><a href="#contact">Contatti</a></li>
-                <li><a href="#education">Educazione</a></li>
-                <li><a href="#experience">Esperienze</a></li>
-                <li><a href="#skills">Competenze</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">JEFFREY</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Progetti</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#bio">Chi sono</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contatti</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Educazione</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Esperienze</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Competenze</a>
+                </li>
             </ul>
+        </div>
     </nav>
+
     <header>
         <h1 class="header-text">Portfolio di Jeffrey</h1>
         <div class="profile-container">
@@ -103,31 +124,43 @@
         
         <section id="education" class="education">
             <h2>Educazione</h2>
-            <ul>
-                <li>
-                   <strong>Certificazione professionale</strong> - Programmazione Python Ente: ProfessionAI (08/07/2024)
-                   <a href="Certificato-programmazione-con-python-.pdf" target="_blank">
-                   <button class="credential-button">Verifica credenziali</button></a>
-                </li>
-                <li>
-                   <strong>Certificazione professionale</strong> - Ethical Hacking Essentials (EHE) Ente: ITHUM S.R.L. Consulenza e Formazione (30/10/2023)
-                   <a href="https://github.com/Jeffrey2211/Jeffrey2211.github.io/blob/Main/Certificazione_ethical_hacker_essentials.jpeg" target="_blank">
-                   <button class="credential-button">Verifica credenziali</button></a> 
-                </li>
-                <li>
-                   <strong>Certificazione professionale</strong> - Cybersecurity Operations Professional (CISCO CyberOps Associate - Analista di Sicurezza Informatica) Ente: ITHUM S.R.L. Consulenza e Formazione (27/10/2023)
-                   <a href="https://www.credential.net/0e76ca68-f5b1-4bb0-86e5-c306ea82a486" target="_blank">
-                   <button class="credential-button">Verifica credenziali</button></a>
-                </li>
-                <li>
-                   <strong>Certificazione professionale</strong> - IT Support & Cybersecurity - Esperto in supporto tecnico e sicurezza informatica (CISCO) Ente: Academy Rapido S.R.L. (28/06/2023)
-                   <a href="https://www.credential.net/a622a31b-3d5a-48c5-8c5f-2f8c9333b36d" target="_blank">
-                   <button class="credential-button">Verifica credenziali</button></a>
-                </li>
-                <li>
-                    <strong>Diploma di Scuola Superiore</strong> - Tecnico delle attività alberghiere - I.P.S.S.A.R. "Armando Perotti" (31/07/2012)
-                </li>
-            </ul>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Certificazione professionale - Programmazione Python</h5>
+                    <p class="card-text">Ente: ProfessionAI (08/07/2024)</p>
+                    <a href="Certificato-programmazione-con-python-.pdf" target="_blank" class="btn btn-primary credential-button">Verifica credenziali</a>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Certificazione professionale - Ethical Hacking Essentials (EHE)</h5>
+                    <p class="card-text">Ente: ITHUM S.R.L. Consulenza e Formazione (30/10/2023)</p>
+                    <a href="https://github.com/Jeffrey2211/Jeffrey2211.github.io/blob/Main/Certificazione_ethical_hacker_essentials.jpeg" target="_blank" class="btn btn-primary credential-button">Verifica credenziali</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Certificazione professionale - Cybersecurity Operations Professional (CISCO CyberOps Associate)</h5>
+                    <p class="card-text">Ente: ITHUM S.R.L. Consulenza e Formazione (27/10/2023)</p>
+                    <a href="https://www.credential.net/0e76ca68-f5b1-4bb0-86e5-c306ea82a486" target="_blank" class="btn btn-primary credential-button">Verifica credenziali</a>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Certificazione professionale - IT Support & Cybersecurity</h5>
+                    <p class="card-text">Ente: Academy Rapido S.R.L. (28/06/2023)</p>
+                    <a href="https://www.credential.net/a622a31b-3d5a-48c5-8c5f-2f8c9333b36d" target="_blank" class="btn btn-primary credential-button">Verifica credenziali</a>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Diploma di Scuola Superiore - Tecnico delle attività alberghiere</h5>
+                    <p class="card-text">I.P.S.S.A.R. "Armando Perotti" (31/07/2012)</p>
+                </div>
+            </div>
         </section>
         
         <section id="experience" class="experience mb-4">
@@ -216,6 +249,9 @@
     -->
 <!-- Collegamento al file JavaScript esterno -->
 <script src="script_portfolio.js"></script>
-
+ <!-- Collegamento ai file JavaScript di Bootstrap -->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 </html>
