@@ -1,4 +1,4 @@
-/* Impostazioni globali */
+no/* Impostazioni globali */
 :root {
     --blu-principale: #007bff;
     --blu-scuro: #0056b3;
@@ -276,7 +276,7 @@ ul li:hover {
     nav {
         z-index: 1000; /* Assicura che la barra di navigazione sia sopra gli altri contenuti se necessario */
         width: 100%;
-        padding: 10px 0; /* Regola il padding se necessario */
+        padding: 5px 0; /* Regola il padding se necessario */
         overflow-x: hidden; /* Nasconde lo scroll orizzontale se presente */
     }
 
