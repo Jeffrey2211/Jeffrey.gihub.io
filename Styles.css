@@ -1,4 +1,4 @@
-no/* Impostazioni globali */
+/* Impostazioni globali */
 :root {
     --blu-principale: #007bff;
     --blu-scuro: #0056b3;
@@ -59,14 +59,10 @@ header {
 }
 
 /* Stili per i titoli */
-h1, h2 {
+h1, h2, h3 {
     color: var(--blu-scuro);
-    text-align: center;
 }
 
-h3 {
-    color: var(--blu-scuro);
-}
 /* Stili per la barra di navigazione */
 nav {
     background: var(--blu-principale); 
@@ -93,7 +89,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -111,7 +107,7 @@ nav ul li a:hover {
 /* Stili per le sezioni */
 .bio, .skills, .experience, .education, .projects, .contact-form-section {
     margin-bottom: 20px;
-    background: rgb(253, 251, 251);
+    background: white;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -219,36 +215,6 @@ footer {
     margin-top: 10px;
 }
 
-/* Animazioni di base */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.fade-in {
-    animation: fadeIn 1s ease-in forwards;
-}
-
-/* Transizioni per hover */
-ul li {
-    background: #e4e4e4;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease, transform 0.3s ease;
-}
-
-ul li:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-
-
 /* Stili per il modulo di contatto */
 .contact-form-section {
     margin-bottom: 150px; /* Assicura che il footer non copra il modulo di contatto */
@@ -272,15 +238,7 @@ ul li:hover {
 }
 
 /* Responsive design */
-@media only screen and (max-width: 768px){
-    nav {
-        z-index: 1000; /* Assicura che la barra di navigazione sia sopra gli altri contenuti se necessario */
-        width: 100%;
-        padding: 10px 0; /* Regola il padding se necessario */
-        overflow-x: hidden; /* Nasconde lo scroll orizzontale se presente */
-    }
-
-
+@media only screen and (max-width: 768px) {
     .profile-container {
         height: auto;
         padding: 20px 0;
