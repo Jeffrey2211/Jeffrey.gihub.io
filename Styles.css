@@ -68,6 +68,9 @@ h1, h2, h3 {
     text-align: center;
 }
 
+h3 {
+    color: var(--blu-scuro);
+}
 /* Stili per la barra di navigazione */
 .navbar {
     background: var(--blu-principale); 
