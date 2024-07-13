@@ -117,7 +117,7 @@ h3{
 .bio, .skills, .experience, .projects, .contact-form-section {
     margin-bottom: 20px;
     background: white;
-    padding: 20px;
+    padding: 12px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: left;
