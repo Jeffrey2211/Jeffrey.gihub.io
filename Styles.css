@@ -75,7 +75,7 @@ h3{
 /* Stili per la barra di navigazione */
 .navbar {
     background: var(--blu-principale); 
-    padding: 10px 0;
+    padding: 8px 0;
     position: sticky;
     top: 0;
     width: 100%;
@@ -102,9 +102,9 @@ h3{
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
-    font-size: 18px; /* Testo più grande */
+    font-size: 15px; /* Testo più grande */
     letter-spacing: 1px; /* Spaziatura leggermente aumentata */
-    padding: 10px 15px; /* Spaziatura interna */
+    padding: 8px 12px; /* Spaziatura interna */
     border-radius: 5px; /* Assicura che il link sia coperto dallo sfondo */
 }
 
